@@ -1,9 +1,10 @@
-import Header from "../layout/Header/Header";
+import React from "react";
 import HomeTemplate from "../template/HomeTemplate";
-export default function Home() {
+
+export default function contact() {
   return (
     <HomeTemplate>
-      <h1>My Next App</h1>
+      <div>contact</div>;
     </HomeTemplate>
   );
 }
