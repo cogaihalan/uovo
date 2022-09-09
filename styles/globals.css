@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import "video-react/dist/video-react.css";
+
 html,
 body {
   padding: 0;
@@ -20,6 +22,8 @@ body {
   line-height: 1.5;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  font-weight: 300;
+  min-height: 100vh;
 }
 img,
 picture,
@@ -63,7 +67,63 @@ a {
 /* Custom navbar */
 .navbar-expand .navbar-nav {
   margin-left: auto;
+  gap: 4rem;
 }
+.navbar-nav .nav-link {
+  font-size: 32px;
+  color: white;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffca05;
+}
+.navbar-nav .nav-link.active {
+  color: #ffca05;
+}
+.carousel-caption {
+  position: unset;
+}
+/* Header */
 .header {
-  padding: 1rem 0;
+  padding: 1.5rem 0 0 0;
+}
+/* Home */
+.home-carousel {
+}
+/* Footer */
+.footer {
+  padding-top: 1rem;
+}
+.footer-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer-copyright {
+  display: flex;
+  align-items: flex-end;
+  gap: 2.5rem;
+}
+
+.footer-list__item {
+  color: white;
+  font-size: 1.25rem;
+}
+.footer-list__item.nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.footer-list__item:hover {
+  color: #ffca05;
+}
+.footer-list__item:not(:last-child) {
+  border-right: 0.75px solid white;
+}
+.footer-office {
+  text-align: right;
+}
+.footer-office__item:first-child {
+  margin-bottom: 1rem;
+}
+.footer-office__name {
+  font-size: 30px;
 }

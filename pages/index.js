@@ -1,9 +1,41 @@
-import Header from "../layout/Header/Header";
+import Carousel from "react-bootstrap/Carousel";
+import { Player } from "video-react";
 import HomeTemplate from "../template/HomeTemplate";
 export default function Home() {
   return (
     <HomeTemplate>
-      <h1>My Next App</h1>
+      <Carousel className="home-carousel">
+        <Carousel.Item>
+          <Player
+            playsInline
+            autoPlay={true}
+            poster="/assets/518.jpg"
+            src="/assets/01.MP4"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
     </HomeTemplate>
   );
 }
