@@ -2,16 +2,22 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "video-react/dist/video-react.css";
 
+*::-webkit-scrollbar {
+  display: none;
+}
 html,
 body {
   padding: 0;
   margin: 0;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 * {
   margin: 0;
   padding: 0;
   font: inherit;
 }
+
 *,
 *::before,
 *::after {
@@ -101,7 +107,9 @@ a {
 .carousel-caption {
   position: unset;
 }
-
+.carousel-item {
+  margin-bottom: 2rem;
+}
 /* Header */
 .header {
   padding: 1.5rem 0 0 0;
@@ -140,11 +148,55 @@ a {
 }
 /* Home */
 .home-carousel {
+  margin-top: 3rem;
+}
+
+.home-info {
+  width: 100%;
+}
+.home-details {
+  position: relative;
+}
+.home-detail {
+  font-size: 4.5rem;
+  font-weight: 900;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  letter-spacing: 4px;
+  animation: strokeColor 5s linear infinite;
+}
+@keyframes strokeColor {
+  0% {
+    -webkit-text-stroke-color: rgba(255, 202, 5, 0.4);
+  }
+  50% {
+    -webkit-text-stroke-color: rgba(255, 202, 5, 0.65);
+  }
+  100% {
+    -webkit-text-stroke-color: rgb(255, 200, 0);
+  }
+}
+.home-intro {
+  position: absolute;
+  display: block;
+  font-size: 1.25rem;
+  width: 45%;
+  top: 45%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+.home-info span {
+  display: block;
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
 }
 /* WORk */
 .work .page-content {
   text-align: right;
   width: 100%;
+}
+.work .home-info {
+  text-align: left;
 }
 .list-work {
   width: 90%;
@@ -153,28 +205,35 @@ a {
 }
 .work-item {
   width: 100%;
-  position: relative;
   display: flex;
+  position: relative;
+  align-items: center;
   gap: 2rem;
   flex-direction: row-reverse;
   margin-right: 2rem;
 }
 .work-item__name {
-  font-size: 60px;
+  font-size: 48px;
   line-height: 1.2;
 }
 .showImg {
   position: absolute;
+  object-fit: cover;
+  width: 900px;
+  height: 200px !important;
   transform: translate(-50%, -100px);
   transition: all 0.5s ease 0s;
+  z-index: 100;
 }
 .showImg.hide {
   opacity: 0;
 }
 
-.work-item:hover .showImg.hide {
-  transform: translate(0, 0);
-  right: 800px;
+.work-item__name:hover {
+  filter: blur(2px);
+}
+.work-item__name:hover + .showImg.hide {
+  transform: translate(-40%, -20%);
   opacity: 1;
 }
 /* Page */
@@ -194,8 +253,6 @@ a {
 }
 .page-subheading {
   font-size: 1rem;
-}
-.page-item {
 }
 .page-item__heading {
   font-size: 2.625rem;
