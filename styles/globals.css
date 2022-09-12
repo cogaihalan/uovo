@@ -531,11 +531,16 @@ a {
   }
   .page-brand {
     margin-top: 1rem;
+    flex-direction: column;
   }
   .page-brand__scan {
     gap: 1rem;
   }
-
+  .page-brand__scan::after {
+    text-align: left;
+    font-weight: bold;
+    bottom: -2rem;
+  }
   .logo {
     padding-left: 0;
     margin: 1rem auto;
