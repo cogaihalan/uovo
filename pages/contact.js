@@ -14,14 +14,15 @@ export default function contact() {
                 <h3 className="page-heading">
                   We look forward to questions, discussions, and collaborations.
                 </h3>
-                <Nav.Link className="page-email" type="email">
+                <p className="page-email" type="email">
                   hello@uovo.agency
-                </Nav.Link>
+                </p>
               </div>
               <div className="page-brand">
                 <div className="page-brand__scan">
                   <div>
                     <Image
+                      className="image-scan"
                       src="/assets/qr1.png"
                       width="100px"
                       height="100px"
@@ -29,6 +30,7 @@ export default function contact() {
                   </div>
                   <div>
                     <Image
+                      className="image-scan"
                       src="/assets/qr2.png"
                       width="100px"
                       height="100px"
