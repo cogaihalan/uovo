@@ -26,7 +26,7 @@ export default function Header() {
           <Navbar.Brand>
             <Link href="/" passHref>
               <Nav.Link>
-                <Image
+                <img
                   src="/assets/logo.png"
                   alt="logo"
                   width={130}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 export default function Logo() {
   const text = "EXPLORER - HANDS-ON/RULER - RESPONSIBILITY/SAGE - LISTEN";
@@ -9,6 +10,7 @@ export default function Logo() {
       if (char === "-") flag = false;
       return (
         <span
+          key={index}
           className={flag ? "bold" : ""}
           style={{ rotate: `${index * 5}deg` }}
         >

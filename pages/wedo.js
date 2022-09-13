@@ -43,7 +43,7 @@ export default function wedo() {
                     semantics.
                   </p>
                   <p>
-                    - At UOVO, the design must follow the customer's core
+                    - At UOVO, the design must follow the customer&apos;s core
                     business model, the design must be consistent with the
                     business model (Designs For Business Model), in line with
                     the positioning of the product. (Category First - Brand

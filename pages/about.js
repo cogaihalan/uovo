@@ -13,11 +13,11 @@ export default function about() {
                 <p className="page-item__heading">Explorer/ Experience:</p>
                 <div className="page-item__desc">
                   UOVO always cares page the experience of customers as well as
-                  the staff in the team. If we don't have a lot of experience,
-                  we won't be able to understand the difference between many
-                  professions. And without much experience, the products made
-                  lack the practicality (hands-on) as well as the application of
-                  how to manage the risks arising.
+                  the staff in the team. If we don&apos;t have a lot of
+                  experience, we won&apos;t be able to understand the difference
+                  between many professions. And without much experience, the
+                  products made lack the practicality (hands-on) as well as the
+                  application of how to manage the risks arising.
                 </div>
               </div>
               <div className="page-item">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import HomeTemplate from "../template/HomeTemplate";
 
@@ -59,7 +60,10 @@ export default function work() {
         <li key={index} className="work-item">
           <p className="work-item__name">{item}</p>
           <div className="hide showImg">
-            <img src={`/assets/images/${item}.${formatImg}`} />
+            <img
+              alt={`${item}`}
+              src={`/assets/images/${item}.${formatImg}`}
+            />
           </div>
         </li>
       );
