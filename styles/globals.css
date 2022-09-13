@@ -92,7 +92,7 @@ a {
 /* Custom navbar */
 .navbar-collapse .navbar-nav {
   margin-left: auto;
-  gap: 4rem;
+  gap: 5.5rem;
   position: relative;
   z-index: 100;
 }
@@ -204,18 +204,18 @@ a {
   color: black;
 }
 .home-detail {
-  font-size: 4.5rem;
+  font-size: 4.875rem;
   font-weight: 800;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
 }
 
 .home-intro {
   position: absolute;
-  display: block;
   font-size: 1.25rem;
-  width: 45%;
+  width: 40%;
   top: 45%;
-  left: 75%;
+  text-align: justify;
+  left: 80%;
   transform: translate(-50%, -50%);
 }
 .home-info span {
@@ -325,7 +325,7 @@ a {
   width: 70%;
 }
 .page-heading {
-  font-size: 3.5rem;
+  font-size: 3.25rem;
   font-weight: bold;
   color: var(--primary-color);
 }
@@ -359,6 +359,10 @@ a {
 }
 .page-contact .page-email {
   margin-top: 1rem;
+  font-size: 2rem;
+}
+.page-contact .page-email:hover {
+  color: var(--primary-color) !important;
 }
 .page-brand {
   margin-top: 6rem;
@@ -414,7 +418,7 @@ a {
   padding-bottom: 0;
 }
 .footer-list__item:hover {
-  color: #ffca05;
+  color: var(--primary-color) !important ;
 }
 .footer-list__item:not(:last-child) {
   border-right: 0.75px solid white;
@@ -437,7 +441,6 @@ a {
   .home-detail {
     font-size: 2.25rem;
     font-weight: 700;
-    -webkit-text-stroke-width: 3px;
     text-align: left;
   }
 
@@ -472,9 +475,6 @@ a {
     font-size: 2.5rem;
   }
 
-  .page-contact .page-email {
-    margin-top: 1rem;
-  }
   .page-brand {
     margin-top: 1rem;
   }
@@ -504,7 +504,7 @@ a {
     width: 100%;
   }
   .page-heading {
-    font-size: 2.75rem;
+    font-size: 2.7rem;
   }
   .page-subheading {
     font-size: 1.5rem;
@@ -526,9 +526,6 @@ a {
     font-size: 2.5rem;
   }
 
-  .page-contact .page-email {
-    margin-top: 1rem;
-  }
   .page-brand {
     margin-top: 1rem;
     flex-direction: column;

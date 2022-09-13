@@ -53,19 +53,18 @@ export default function Footer() {
             <div className="footer-office">
               <div className="footer-office__item">
                 <span className="footer-office__name">Hanoi Office</span>
-                <Link href="work" passHref>
-                  <Nav.Link className="footer-list__item">
-                    hello@uovo.agency
-                  </Nav.Link>
-                </Link>
+                <Nav.Link
+                  href="mailto:hello@uovo.agency"
+                  className="footer-list__item"
+                >
+                  hello@uovo.agency
+                </Nav.Link>
               </div>
               <div className="footer-office__item">
                 <span className="footer-office__name">Korea Office</span>
-                <Link href="work" passHref>
-                  <Nav.Link className="footer-list__item">
-                    kmkro@uovo.vn
-                  </Nav.Link>
-                </Link>
+                <Nav.Link href="#" className="footer-list__item">
+                  kmkro@uovo.vn
+                </Nav.Link>
               </div>
             </div>
           </div>

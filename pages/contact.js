@@ -13,9 +13,9 @@ export default function contact() {
                 <h3 className="page-heading">
                   We look forward to questions, discussions, and collaborations.
                 </h3>
-                <p className="page-email" type="email">
+                <a className="page-email" href="mailto:hello@uovo.agency">
                   hello@uovo.agency
-                </p>
+                </a>
               </div>
               <div className="page-brand">
                 <div className="page-brand__scan">

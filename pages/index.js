@@ -61,14 +61,14 @@ export default function Home() {
     <HomeTemplate themeClasses={theme ? "dark-theme" : "light-theme"}>
       <Container>
         <Carousel
-          controls={true}
+          controls={false}
           onSelect={() => {
             setTheme(!theme);
           }}
-          indicators={false}
+          indicators={true}
           className="home-carousel"
         >
-          <Carousel.Item interval={5000}>
+          <Carousel.Item>
             <div className="home-info">
               <div className="home-details">
                 <div className="home-detail">Creative Agency</div>
@@ -77,16 +77,17 @@ export default function Home() {
                 <div className="home-detail">Brand Identity</div>
                 <div className="home-detail">Visual Unity Solution</div>
               </div>
-              <div className="home-intro">
+              <p className="home-intro">
                 Hello!
                 <br />
                 UOVO is a agency based in Hanoi in 2018. We aim for unfolding
                 your brand story, mapping great brand strategies and letting
-                them to win customer’s mind. Your story is what inspired us!
-              </div>
+                them to win customer&apos;s mind. Your story is what inspired
+                us!
+              </p>
             </div>
           </Carousel.Item>
-          <Carousel.Item interval={5000}>
+          <Carousel.Item>
             <div className="d-flex justify-content-center">
               <video
                 width="100%"
@@ -100,12 +101,12 @@ export default function Home() {
             </div>
           </Carousel.Item>
 
-          <Carousel.Item interval={5000}>
+          <Carousel.Item>
             <div className="d-flex justify-content-center mt-5">
               <img src="/assets/logo3.png" alt="logo 3" />
             </div>
           </Carousel.Item>
-          <Carousel.Item interval={240000}>
+          <Carousel.Item>
             <div className="home-partners__slider">
               <div>
                 <Slider {...settings}>{renderPartnersLogo()}</Slider>
