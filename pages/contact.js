@@ -20,7 +20,7 @@ export default function contact() {
               <div className="page-brand">
                 <div className="page-brand__scan">
                   <div>
-                    <img
+                    <Image
                       className="image-scan"
                       src="/assets/qr1.png"
                       alt="uovo-social-media"
@@ -29,7 +29,7 @@ export default function contact() {
                     />
                   </div>
                   <div>
-                    <img
+                    <Image
                       className="image-scan"
                       src="/assets/qr2.png"
                       alt="uovo-social-media"

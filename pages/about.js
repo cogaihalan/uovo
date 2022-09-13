@@ -10,7 +10,7 @@ export default function about() {
             <div className="page-content">
               <h1 className="page-heading">UOVO - Positioning Statement</h1>
               <div className="page-item">
-                <p className="page-item__heading">Explorer/ Experience:</p>
+                <p className="page-item__heading">- Explorer/ Experience:</p>
                 <div className="page-item__desc">
                   UOVO always cares page the experience of customers as well as
                   the staff in the team. If we don&apos;t have a lot of
@@ -21,7 +21,7 @@ export default function about() {
                 </div>
               </div>
               <div className="page-item">
-                <p className="page-item__heading">Ruler/ Discipline:</p>
+                <p className="page-item__heading">- Ruler/ Discipline:</p>
                 <div className="page-item__desc">
                   Each individual in UOVO must work with a standard/ disciplined
                   principle, must show Thoroughness in work, discipline with
@@ -33,7 +33,7 @@ export default function about() {
                 </div>
               </div>
               <div className="page-item">
-                <p className="page-item__heading">Sage/ Understanding:</p>
+                <p className="page-item__heading">- Sage/ Understanding:</p>
                 <div className="page-item__desc">
                   UOVO is always ready to listen (listen) to all problems faced
                   by customers, and at the same time carefully study many
