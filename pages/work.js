@@ -7,9 +7,9 @@ const dataNameImageJPG = [
   "deVUI",
   "Mekong capital",
   "yen tu mountain",
-  "Hoiana",
+  // "Hoiana",
   "Le Virtu`",
-  "Maa pickles",
+  // "Maa pickles",
   "kk sapa hotel",
   "ha long pearl yogurt",
   "HikVision",
@@ -37,17 +37,17 @@ const dataNameImageJPG = [
   "davicon",
   "seagold",
   "sunny",
-  "cool mate",
+  // "cool mate",
   "hi look",
-  "es agents",
+  // "es agents",
   "vietlesson",
   "dr helens",
-  "vicem haiphong",
+  // "vicem haiphong",
   "ant",
   "htv tree",
-  "au group",
-  "hoa vien",
-  "hong an",
+  // "au group",
+  // "hoa vien",
+  // "hong an",
   "trangzee",
   "thanh xuan 90",
 ];
@@ -63,7 +63,7 @@ export default function work() {
             <LazyLoadImage
               effect="blur"
               alt={`${item}`}
-              src={`/assets/images/${item}.${formatImg}` ?? ""}
+              src={`/assets/images/${item}.${formatImg}`}
             />
           </div>
         </li>
