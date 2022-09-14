@@ -51,7 +51,6 @@ const dataNameImageJPG = [
   "trangzee",
   "thanh xuan 90",
 ];
-
 const dataNameImagePNG = ["hoan my service", "Fami", "FC racing", "z125"];
 export default function work() {
   const renderImage = (listImage, format) => {
@@ -62,9 +61,9 @@ export default function work() {
           <p className="work-item__name">{item}</p>
           <div className="hide showImg">
             <LazyLoadImage
-              effect="black and white"
+              effect="blur"
               alt={`${item}`}
-              src={`/assets/images/${item}.${formatImg}`}
+              src={`/assets/images/${item}.${formatImg}` ?? ""}
             />
           </div>
         </li>

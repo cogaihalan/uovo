@@ -27,7 +27,7 @@ body {
 body {
   font-family: "Montserrat", sans-serif !important;
   font-weight: 300 !important;
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
 }
 img,
 picture,
@@ -99,13 +99,16 @@ a {
   font-weight: 300 !important;
 }
 
+.navbar-toggler {
+  border: none !important;
+}
 .light-theme .navbar-toggler {
   background-color: black;
 }
 .navbar-toggler:focus {
-  outline: none;
+  outline: none !important;
   border-radius: 2px;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 .dark-theme .navbar-nav .nav-link {
   color: white;

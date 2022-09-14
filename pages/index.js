@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Container } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { LazyVideo } from "react-lazy-media";
 import Slider from "react-slick";
 import HomeTemplate from "../template/HomeTemplate";
 export default function Home() {
@@ -62,11 +61,13 @@ export default function Home() {
     <HomeTemplate themeClasses={theme ? "dark-theme" : "light-theme"}>
       <Container>
         <Carousel
+          fade
           controls={true}
           onSelect={() => {
             setTheme(!theme);
           }}
           indicators={false}
+          slide={true}
           className="home-carousel"
         >
           <Carousel.Item>
