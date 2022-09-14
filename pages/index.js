@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import { LazyLoadImage } from "react-lazy-load-image-component";
