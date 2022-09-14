@@ -1,7 +1,6 @@
 import React from "react";
 import HomeTemplate from "../template/HomeTemplate";
 import Logo from "../components/Layout/Logo";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import Image from "next/image";
 export default function contact() {
   return (
