@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import HomeTemplate from "../template/HomeTemplate";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const dataNameImageJPG = [
   "womo",
   "deVUI",
@@ -33,11 +33,11 @@ const dataNameImageJPG = [
   "dobe vietnam",
   "518",
   "itc",
+  "trang an inter",
   "davicon",
   "seagold",
   "sunny",
   "cool mate",
-  "hoan my service",
   "hi look",
   "es agents",
   "vietlesson",
@@ -51,7 +51,8 @@ const dataNameImageJPG = [
   "trangzee",
   "thanh xuan 90",
 ];
-const dataNameImagePNG = ["Fami", "FC racing", "z125"];
+
+const dataNameImagePNG = ["hoan my service", "Fami", "FC racing", "z125"];
 export default function work() {
   const renderImage = (listImage, format) => {
     const formatImg = format ? "jpg" : "png";
@@ -60,7 +61,8 @@ export default function work() {
         <li key={index} className="work-item">
           <p className="work-item__name">{item}</p>
           <div className="hide showImg">
-            <img
+            <LazyLoadImage
+              effect="black and white"
               alt={`${item}`}
               src={`/assets/images/${item}.${formatImg}`}
             />

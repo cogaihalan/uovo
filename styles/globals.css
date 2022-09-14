@@ -360,6 +360,8 @@ a {
 .page-contact .page-email {
   margin-top: 1rem;
   font-size: 2rem;
+  text-decoration: none;
+  color: white !important;
 }
 .page-contact .page-email:hover {
   color: var(--primary-color) !important;
@@ -431,6 +433,7 @@ a {
 }
 .footer-office__name {
   font-size: 30px;
+  color: var(--primary-color);
 }
 
 /* Mobile */

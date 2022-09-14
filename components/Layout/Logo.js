@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function Logo() {
   const text = "EXPLORER - HANDS-ON/RULER - RESPONSIBILITY/SAGE - LISTEN";
 
@@ -21,7 +22,12 @@ export default function Logo() {
   };
   return (
     <div className="logo">
-      <img src="/assets/logo2.png" alt="Logo" className="logo-image" />
+      <LazyLoadImage
+        effect="blur"
+        src="/assets/logo2.png"
+        alt="Logo"
+        className="logo-image"
+      />
       <p className="logo-text--circle">{convertTextCircle()}</p>
     </div>
   );

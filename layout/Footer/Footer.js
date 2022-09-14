@@ -62,8 +62,11 @@ export default function Footer() {
               </div>
               <div className="footer-office__item">
                 <span className="footer-office__name">Korea Office</span>
-                <Nav.Link href="#" className="footer-list__item">
-                  kmkro@uovo.vn
+                <Nav.Link
+                  href="mailto:kr.hello@uovo.agency"
+                  className="footer-list__item"
+                >
+                  kr.hello@uovo.agency
                 </Nav.Link>
               </div>
             </div>

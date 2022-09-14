@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Slider from "react-slick";
 import HomeTemplate from "../template/HomeTemplate";
 export default function Home() {
@@ -49,7 +50,7 @@ export default function Home() {
     return partnerQuantity().map((partnerId, index) => {
       return (
         <div key={index} className="partners-img">
-          <img
+          <LazyLoadImage
             src={`/assets/partners/Asset ${partnerId}.jpg`}
             alt={`Partner ${partnerId}`}
           />
@@ -61,11 +62,11 @@ export default function Home() {
     <HomeTemplate themeClasses={theme ? "dark-theme" : "light-theme"}>
       <Container>
         <Carousel
-          controls={false}
+          controls={true}
           onSelect={() => {
             setTheme(!theme);
           }}
-          indicators={true}
+          indicators={false}
           className="home-carousel"
         >
           <Carousel.Item>
@@ -103,7 +104,7 @@ export default function Home() {
 
           <Carousel.Item>
             <div className="d-flex justify-content-center mt-5">
-              <img src="/assets/logo3.png" alt="logo 3" />
+              <LazyLoadImage src="/assets/logo3.png" alt="logo 3" />
             </div>
           </Carousel.Item>
           <Carousel.Item>
