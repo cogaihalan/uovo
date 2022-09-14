@@ -25,11 +25,8 @@ body {
 }
 
 body {
-  line-height: 1.5;
   font-family: "Montserrat", sans-serif !important;
-  font-size: 16px;
-  font-weight: 300;
-  min-height: 100vh !important;
+  font-weight: 300 !important;
   transition: all 0.2s linear;
 }
 img,
@@ -62,6 +59,7 @@ a {
 }
 .page {
   padding-top: 2rem;
+  min-height: 68vh;
 }
 .bold {
   font-weight: 700 !important;
@@ -267,6 +265,7 @@ a {
 .work-item__name {
   font-size: 48px;
   line-height: 1.2;
+  cursor: pointer;
 }
 .showImg {
   position: absolute;
