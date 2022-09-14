@@ -12,7 +12,7 @@ export default function HomeTemplate({ themeClasses, children }) {
         <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
         <title>UOVO</title>
       </Head>
-      
+
       <div className={themeClasses}>
         <Header></Header>
         <main>{children}</main>

@@ -1,8 +1,8 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LazyVideo } from "react-lazy-media";
 import Slider from "react-slick";
 import HomeTemplate from "../template/HomeTemplate";
 export default function Home() {
@@ -97,7 +97,7 @@ export default function Home() {
                 controls={false}
                 autoPlay={true}
               >
-                <source src="/assets/01.MP4" type="video/mp4" />
+                <source data-src="/assets/01.MP4" type="video/mp4"></source>
               </video>
             </div>
           </Carousel.Item>

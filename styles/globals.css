@@ -29,7 +29,7 @@ body {
   font-family: "Montserrat", sans-serif !important;
   font-size: 16px;
   font-weight: 300;
-  min-height: 100vh;
+  min-height: 100vh !important;
   transition: all 0.2s linear;
 }
 img,
@@ -101,7 +101,7 @@ a {
 }
 
 .light-theme .navbar-toggler {
-  background-color: rgba(255, 202, 5, 0.89);
+  background-color: black;
 }
 .navbar-toggler:focus {
   outline: none;
@@ -145,7 +145,12 @@ a {
 .carousel-item {
   margin-bottom: 2rem;
 }
-
+.carousel-control-prev {
+  left: -10%;
+}
+.carousel-control-next {
+  right: -10%;
+}
 /* Header */
 .header {
   padding: 1.5rem 1.5rem 0;
@@ -153,15 +158,15 @@ a {
 /* Logo Text Circle */
 .logo {
   position: relative;
-  width: 350px;
+  width: 360px;
   display: block;
   margin-left: 1rem;
-  height: 350px;
+  height: 360px;
   border-radius: 50%;
 }
 .logo-image {
   position: absolute;
-  top: 50% !important;
+  top: 55% !important;
   left: 50% !important;
   transform: translate(-50%, -50%);
 }
@@ -174,9 +179,9 @@ a {
 .logo-text--circle span {
   position: absolute;
   left: 50%;
-  font-size: 1rem;
-  font-weight: 500;
-  transform-origin: 0 175px;
+  font-size: 1.125rem;
+  font-weight: 300;
+  transform-origin: 0 180px;
 }
 @keyframes circle {
   0% {
@@ -224,7 +229,8 @@ a {
   margin-bottom: 0.25rem;
 }
 .home-partners__slider {
-  height: 400px;
+  padding: 2.5rem 0 0 0;
+  height: 75vh;
 }
 .partners-img {
   height: 300px;
