@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
 import { Container } from "react-bootstrap";
-import Image from "next/image";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const navLinkList = ["work", "about", "wedo", "contact"];
 export default function Header() {
   const renderNavLink = () => {
@@ -26,7 +26,7 @@ export default function Header() {
           <Navbar.Brand>
             <Link href="/" passHref>
               <Nav.Link>
-                <Image
+                <LazyLoadImage
                   src="/assets/logo.png"
                   alt="logo"
                   width={130}

@@ -61,7 +61,6 @@ export default function Home() {
     <HomeTemplate themeClasses={theme ? "dark-theme" : "light-theme"}>
       <Container>
         <Carousel
-          fade
           controls={true}
           onSelect={() => {
             setTheme(!theme);

@@ -1,7 +1,7 @@
 import React from "react";
 import HomeTemplate from "../template/HomeTemplate";
 import Logo from "../components/Layout/Logo";
-import Image from "next/image";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function contact() {
   return (
     <HomeTemplate themeClasses="dark-theme">
@@ -20,7 +20,7 @@ export default function contact() {
               <div className="page-brand">
                 <div className="page-brand__scan">
                   <div>
-                    <Image
+                    <LazyLoadImage
                       className="image-scan"
                       src="/assets/qr1.png"
                       alt="uovo-social-media"
@@ -29,7 +29,7 @@ export default function contact() {
                     />
                   </div>
                   <div>
-                    <Image
+                    <LazyLoadImage
                       className="image-scan"
                       src="/assets/qr2.png"
                       alt="uovo-social-media"
