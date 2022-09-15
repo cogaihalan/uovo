@@ -357,7 +357,13 @@ a {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .carousel-control-next-icon {
+    right: -50% !important;
+  }
+  .carousel-control-prev-icon {
+    left: -50% !important;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .showImg {
