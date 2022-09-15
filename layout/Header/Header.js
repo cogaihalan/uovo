@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Container } from "react-bootstrap";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const navLinkList = ["work", "about", "wedo", "contact"];
-export default function Header() {
+export default function Header(props) {
   const renderNavLink = () => {
     return navLinkList.map((item, index) => {
       let content = item;
@@ -35,7 +35,9 @@ export default function Header() {
               </Nav.Link>
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <div className="header-menu"></div>
+          </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>{renderNavLink()}</Nav>
           </Navbar.Collapse>

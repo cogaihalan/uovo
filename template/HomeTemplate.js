@@ -20,7 +20,7 @@ export default function HomeTemplate({ themeClasses, children }) {
         <title>UOVO</title>
       </Head>
       <div className={themeClasses}>
-        <Header></Header>
+        <Header theme={themeClasses}></Header>
         <main>{children}</main>
         <Footer></Footer>
       </div>
