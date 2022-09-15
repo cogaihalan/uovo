@@ -119,7 +119,7 @@ export default function Home() {
                   controls={false}
                   autoPlay={true}
                 >
-                  <source src="/assets/01.MP4" type="video/mp4"></source>
+                  <source src="/assets/01.MP4" type="video/mp4" />
                 </video>
               </div>
             </Carousel.Item>

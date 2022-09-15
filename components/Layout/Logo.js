@@ -13,7 +13,9 @@ export default function Logo() {
         <span
           key={index}
           className={flag ? "bold" : ""}
-          style={{ rotate: `${index * 6.25}deg` }}
+          style={{
+            transform: `rotate(${index * 6.25}deg)`,
+          }}
         >
           {char}
         </span>
