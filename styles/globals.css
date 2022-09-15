@@ -146,12 +146,25 @@ a {
 }
 .carousel-item {
   margin-bottom: 2rem;
+  min-height: 650px;
 }
-.carousel-control-prev {
-  left: -10% !important;
+.carousel-image {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.carousel-control-next {
-  right: -10% !important;
+.carousel-control-next-icon {
+  position: absolute;
+  right: -20% !important;
+}
+.carousel-control-prev-icon {
+  position: absolute;
+  left: -20% !important;
 }
 /* Header */
 .header {
@@ -221,7 +234,6 @@ a {
   font-size: 1.25rem;
   width: 40%;
   top: 45%;
-  text-align: justify;
   left: 80%;
   transform: translate(-50%, -50%);
 }
@@ -231,8 +243,8 @@ a {
   margin-bottom: 0.25rem;
 }
 .home-partners__slider {
-  padding: 2.5rem 0 0 0;
-  height: 75vh;
+  padding: 6.5rem 0 0 0;
+  height: 70vh;
 }
 .partners-img {
   height: 300px;
@@ -431,8 +443,11 @@ a {
 .footer-list__item:hover {
   color: var(--primary-color) !important ;
 }
-.footer-list__item:not(:last-child) {
+.dark-theme .footer-list__item:not(:last-child) {
   border-right: 0.75px solid white;
+}
+.light-theme .footer-list__item:not(:last-child) {
+  border-right: 0.75px solid black;
 }
 .footer-office {
   text-align: right;
@@ -481,7 +496,7 @@ a {
   }
 
   .logo-text--circle span {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   .page-contact {
     font-size: 2.5rem;
@@ -532,7 +547,7 @@ a {
   }
 
   .logo-text--circle span {
-    font-size: 0.75rem;
+    font-size: 1.075rem;
   }
   .page-contact {
     font-size: 2.5rem;
@@ -552,7 +567,7 @@ a {
   }
   .logo {
     padding-left: 0;
-    margin: 1rem auto;
+    margin: 1rem auto 2rem;
   }
   .footer {
     margin-top: 1rem;
@@ -593,7 +608,6 @@ a {
   .home-detail {
     font-size: 3.5rem;
     font-weight: 700;
-    -webkit-text-stroke-width: 3px;
     text-align: center;
   }
 
@@ -601,7 +615,6 @@ a {
     font-size: 1.5rem;
     position: unset;
     transform: none;
-    text-align: justify;
     width: 100%;
     bottom: 0;
   }

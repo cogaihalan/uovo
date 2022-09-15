@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function Logo() {
-  const text = "EXPLORER - HANDS-ON/RULER - RESPONSIBILITY/SAGE - LISTEN";
+  const text = "-EXPLORER - HANDS-ON/RULER - RESPONSIBILITY/SAGE - LISTEN";
 
   const convertTextCircle = () => {
     let flag = true;
@@ -13,7 +13,7 @@ export default function Logo() {
         <span
           key={index}
           className={flag ? "bold" : ""}
-          style={{ rotate: `${index * 5}deg` }}
+          style={{ rotate: `${index * 6.25}deg` }}
         >
           {char}
         </span>

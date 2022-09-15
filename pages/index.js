@@ -9,6 +9,7 @@ export default function Home() {
   const settings = {
     dots: false,
     arrows: false,
+    lazyLoad: true,
     infinite: true,
     autoplaySpeed: 2000,
     autoplay: true,
@@ -58,64 +59,87 @@ export default function Home() {
     });
   };
   return (
-    <HomeTemplate themeClasses={theme ? "dark-theme" : "light-theme"}>
-      <Container>
-        <Carousel
-          controls={true}
-          onSelect={() => {
-            setTheme(!theme);
-          }}
-          indicators={false}
-          slide={true}
-          className="home-carousel"
-        >
-          <Carousel.Item>
-            <div className="home-info">
-              <div className="home-details">
-                <div className="home-detail">Creative Agency</div>
-                <div className="home-detail">Brand Agency</div>
-                <div className="home-detail">Brand Strategy</div>
-                <div className="home-detail">Brand Identity</div>
-                <div className="home-detail">Visual Unity Solution</div>
+    <>
+      <HomeTemplate themeClasses={theme ? "dark-theme" : "light-theme"}>
+        <Container>
+          <Carousel
+            nextIcon={
+              <span
+                className="carousel-control-next-icon"
+                style={{
+                  backgroundImage: theme
+                    ? "url(/assets/whiteNextIcon.png)"
+                    : "url(/assets/nextIcon.png)",
+                }}
+              ></span>
+            }
+            prevIcon={
+              <span
+                style={{
+                  backgroundImage: theme
+                    ? "url(/assets/whitePrevIcon.png)"
+                    : "url(/assets/prevIcon.png)",
+                }}
+                className="carousel-control-prev-icon"
+              ></span>
+            }
+            controls={true}
+            onSelect={() => {
+              setTheme(!theme);
+            }}
+            indicators={false}
+            slide={true}
+            className="home-carousel"
+          >
+            <Carousel.Item>
+              <div className="home-info">
+                <div className="home-details">
+                  <div className="home-detail">Creative Agency</div>
+                  <div className="home-detail">Brand Agency</div>
+                  <div className="home-detail">Brand Strategy</div>
+                  <div className="home-detail">Brand Identity</div>
+                  <div className="home-detail">Visual Unity Solution</div>
+                </div>
+                <p className="home-intro">
+                  Hello!
+                  <br />
+                  UOVO is a agency based in Hanoi in 2018. We aim for unfolding
+                  your brand story, mapping great brand strategies and letting
+                  them to win customer&apos;s mind. Your story is what inspired
+                  us!
+                </p>
               </div>
-              <p className="home-intro">
-                Hello!
-                <br />
-                UOVO is a agency based in Hanoi in 2018. We aim for unfolding
-                your brand story, mapping great brand strategies and letting
-                them to win customer&apos;s mind. Your story is what inspired
-                us!
-              </p>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="d-flex justify-content-center">
-              <video
-                width="100%"
-                height="550px"
-                loop={true}
-                controls={false}
-                autoPlay={true}
-              >
-                <source src="/assets/01.MP4" type="video/mp4"></source>
-              </video>
-            </div>
-          </Carousel.Item>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="d-flex justify-content-center">
+                <video
+                  width="100%"
+                  height="550px"
+                  loop={true}
+                  controls={false}
+                  autoPlay={true}
+                >
+                  <source src="/assets/01.MP4" type="video/mp4"></source>
+                </video>
+              </div>
+            </Carousel.Item>
 
-          <Carousel.Item>
-            <div className="d-flex justify-content-center mt-5">
-              <LazyLoadImage src="/assets/logo3.png" alt="logo 3" />
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="home-partners__slider">
-              <div>
+            <Carousel.Item>
+              <div
+                className="carousel-image"
+                style={{
+                  backgroundImage: "url(/assets/logo3.png) ",
+                }}
+              ></div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="home-partners__slider">
                 <Slider {...settings}>{renderPartnersLogo()}</Slider>
               </div>
-            </div>
-          </Carousel.Item>
-        </Carousel>
-      </Container>
-    </HomeTemplate>
+            </Carousel.Item>
+          </Carousel>
+        </Container>
+      </HomeTemplate>
+    </>
   );
 }
