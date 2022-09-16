@@ -52,7 +52,7 @@ export default function wedo() {
                 </div>
               </div>
             </div>
-            <Logo></Logo>
+            <Logo theme="light-theme"></Logo>
           </div>
         </div>
       </div>

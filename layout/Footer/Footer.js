@@ -19,8 +19,40 @@ export default function Footer() {
               uovo creative agency vn., jsc
             </Nav.Link>
           </div>
-          <div className="footer-responsive">
+          <div className="d-none d-lg-block">
             <Nav className="footer-list">
+              <Link href="https://www.instagram.com/uovo.agency" passHref>
+                <Nav.Link target="_blank" className="footer-list__item">
+                  Instagram
+                </Nav.Link>
+              </Link>
+              <Link href="https://www.behance.net/uovo" passHref>
+                <Nav.Link target="_blank" className="footer-list__item">
+                  Behance
+                </Nav.Link>
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/uovocreativeagency"
+                passHref
+              >
+                <Nav.Link target="_blank" className="footer-list__item">
+                  Linkedin
+                </Nav.Link>
+              </Link>
+              <Link href="https://facebook.com/424240507644880/" passHref>
+                <Nav.Link target="_blank" className="footer-list__item">
+                  Facebook
+                </Nav.Link>
+              </Link>
+              <Link href="https://fliphtml5.com/biiqt/mrkt" passHref>
+                <Nav.Link target="_blank" className="footer-list__item">
+                  Portfolio
+                </Nav.Link>
+              </Link>
+            </Nav>
+          </div>
+          <div className="footer-responsive">
+            <Nav className="footer-list d-flex d-lg-none">
               <Link href="https://www.instagram.com/uovo.agency" passHref>
                 <Nav.Link target="_blank" className="footer-list__item">
                   Instagram

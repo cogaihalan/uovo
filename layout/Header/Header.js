@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
 import { Container, Offcanvas } from "react-bootstrap";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const navLinkList = ["work", "about", "wedo", "contact"];
-export default function Header(props) {
+export default function Header() {
   const renderNavLink = () => {
     return navLinkList.map((item, index) => {
       let content = item;
@@ -13,16 +13,18 @@ export default function Header(props) {
         content = "we do";
       }
       return (
-        <Link key={index} href={`/${item}`} passHref>
-          <Nav.Link>{content}</Nav.Link>
-        </Link>
+        <Nav.Item key={index}>
+          <Link href={`/${item}`} passHref>
+            <Nav.Link >{content}</Nav.Link>
+          </Link>
+        </Nav.Item>
       );
     });
   };
   return (
     <header>
       <Container className="header">
-        <Navbar variant="dark" expand="lg">
+        <Navbar onSelect={() => {}} variant="dark" expand="lg">
           <Navbar.Brand>
             <Link href="/" passHref>
               <Nav.Link>

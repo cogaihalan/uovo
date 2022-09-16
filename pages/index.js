@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
+import video from "../public/assets/video.gif";
 import Carousel from "react-bootstrap/Carousel";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Slider from "react-slick";
@@ -111,16 +112,8 @@ export default function Home() {
               </div>
             </Carousel.Item>
             <Carousel.Item>
-              <div className="d-flex justify-content-center">
-                <video
-                  width="100%"
-                  height="550px"
-                  loop={true}
-                  controls={false}
-                  autoPlay={true}
-                >
-                  <source src="/assets/01.MP4" type="video/mp4" />
-                </video>
+              <div className="d-flex justify-content-center carousel-video">
+                <LazyLoadImage src={video.src} alt="video"></LazyLoadImage>
               </div>
             </Carousel.Item>
 

@@ -44,7 +44,7 @@ export default function about() {
                 </div>
               </div>
             </div>
-            <Logo></Logo>
+            <Logo theme="dark-theme"></Logo>
           </div>
         </div>
       </div>
