@@ -28,26 +28,17 @@ export default function wedo() {
                 <p className="page-item__heading">Product objective:</p>
                 <div className="page-item__desc">
                   <p>
-                    - At UOVO, the products made are not simply beautiful or
-                    just tell a certain story.
+                    - At UOVO, the products are not only beautiful or engaging
+                    but also suitable for customer&apos;s brand characteristics.
                   </p>
                   <p>
-                    - At UOVO, the design always needs to pay attention to the
-                    practical application as well as the control of risks
-                    related to the image to help businesses optimize costs.
+                    - At UOVO, the products are in line with practical
+                    application to help businesses optimize costs.
                   </p>
                   <p>
-                    - At UOVO, the designed products must show the model and
-                    personality that the brand is aiming for. People often tend
-                    to feel about personality and spirit before understanding
-                    semantics.
-                  </p>
-                  <p>
-                    - At UOVO, the design must follow the customer&apos;s core
-                    business model, the design must be consistent with the
-                    business model (Designs For Business Model), in line with
-                    the positioning of the product. (Category First - Brand
-                    Second)
+                    - At UOVO, the products are in line with the customer&apos;s
+                    core business model(Designs For Business Model) and the
+                    positioning of the product. (Category First - Brand Second)
                   </p>
                 </div>
               </div>

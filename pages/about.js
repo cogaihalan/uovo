@@ -12,35 +12,31 @@ export default function about() {
               <div className="page-item">
                 <p className="page-item__heading">- Explorer/ Experience:</p>
                 <div className="page-item__desc">
-                  UOVO always cares page the experience of customers as well as
-                  the staff in the team. If we don&apos;t have a lot of
-                  experience, we won&apos;t be able to understand the difference
-                  between many professions. And without much experience, the
-                  products made lack the practicality (hands-on) as well as the
-                  application of how to manage the risks arising.
+                  UOVO always cares about the experience of customers as well as
+                  the staff. If we don&apos;t experience much, we won&apos;t be
+                  able to understand the difference between industries. And
+                  without much experience, the design will made lack the
+                  hands-on experience as well as ability to manage risks.
                 </div>
               </div>
               <div className="page-item">
                 <p className="page-item__heading">- Ruler/ Discipline:</p>
                 <div className="page-item__desc">
-                  Each individual in UOVO must work with a standard/ disciplined
-                  principle, must show Thoroughness in work, discipline with
-                  time. No creativity is created by carelessness, it is
-                  discipline that brings creativity. UOVO always has
-                  responsibility (responsibility) for each product created, to
-                  achieve the highest responsibility, discipline is
-                  indispensable.
+                  Each individual in UOVO must keep good discipline, obey the
+                  high standard of work and be punctual. No creativity is
+                  created by carelessness, it is discipline that brings
+                  creativity. UOVO always has responsibility for each product
+                  created and discipline is indispensable to achieve the highest
+                  responsibility.
                 </div>
               </div>
               <div className="page-item">
                 <p className="page-item__heading">- Sage/ Understanding:</p>
                 <div className="page-item__desc">
-                  UOVO is always ready to listen (listen) to all problems faced
-                  by customers, and at the same time carefully study many
-                  factors, observe many aspects of the matter to provide the
-                  best solution. With UOVO personal bias will always not appear
-                  due to the criteria of Listening - understanding is always the
-                  guideline for us to work
+                  UOVO is always ready to listen to all customer issues. We come
+                  up with solution by carefully defining and digging into the
+                  factors. At UOVO, personal bias is not priority as our
+                  guideline for work is understanding.
                 </div>
               </div>
             </div>

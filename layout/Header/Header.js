@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
 import { Container, Offcanvas } from "react-bootstrap";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useSelector, useDispatch } from "react-redux";
+import changeTabActive from "../../redux/reducers/NavbarReducers";
 const navLinkList = ["work", "about", "wedo", "contact"];
 export default function Header() {
+  // const tabNameActive = useSelector((state) => state.navbar.tabActive);
+  // const dispatch = useDispatch();
   const renderNavLink = () => {
     return navLinkList.map((item, index) => {
       let content = item;
@@ -15,7 +19,7 @@ export default function Header() {
       return (
         <Nav.Item key={index}>
           <Link href={`/${item}`} passHref>
-            <Nav.Link >{content}</Nav.Link>
+            <Nav.Link>{content}</Nav.Link>
           </Link>
         </Nav.Item>
       );
@@ -24,7 +28,7 @@ export default function Header() {
   return (
     <header>
       <Container className="header">
-        <Navbar onSelect={() => {}} variant="dark" expand="lg">
+        <Navbar variant="dark" expand="lg">
           <Navbar.Brand>
             <Link href="/" passHref>
               <Nav.Link>
@@ -47,7 +51,14 @@ export default function Header() {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <Nav>{renderNavLink()}</Nav>
+              <Nav
+                onSelect={(pages) => {
+                  const tabActive = pages.slice(1);
+                  // dispatch(changeTabActive(tabActive));
+                }}
+              >
+                {renderNavLink()}
+              </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Navbar>

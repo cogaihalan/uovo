@@ -44,8 +44,8 @@ export default function contact() {
                   UOVO is a agency based in Hanoi in 2018.
                   <br />
                   We aim for unfolding your brand story, mapping great brand
-                  strategies and letting them to win customer’s mind. Your story
-                  is what inspired us!
+                  strategies and letting them to win customer&apos;s mind. Your
+                  story is what inspired us!
                 </div>
               </div>
             </div>
