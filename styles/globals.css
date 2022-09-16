@@ -28,7 +28,6 @@ body {
   font-family: "Montserrat", sans-serif !important;
   font-weight: 300 !important;
   transition: all 0.3s linear !important;
-  min-height: 100vh !important;
 }
 img,
 picture,
@@ -82,9 +81,11 @@ a {
 .dark-theme {
   color: white;
   background-color: black;
+  min-height: 100vh;
 }
 .light-theme {
   color: black;
+  min-height: 100vh;
   background-color: white;
 }
 
