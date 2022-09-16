@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import { Container, Offcanvas } from "react-bootstrap";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const navLinkList = ["work", "about", "wedo", "contact"];
 export default function Header() {
+  const router = useRouter();
+  const tabActive = router.pathname.slice(1);
   const renderNavLink = () => {
     return navLinkList.map((item, index) => {
       let content = item;
@@ -15,7 +18,9 @@ export default function Header() {
       return (
         <Nav.Item key={index}>
           <Link href={`/${item}`} passHref>
-            <Nav.Link>{content}</Nav.Link>
+            <Nav.Link className={tabActive === item ? "active" : ""}>
+              {content}
+            </Nav.Link>
           </Link>
         </Nav.Item>
       );
@@ -47,13 +52,7 @@ export default function Header() {
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <Nav
-                onSelect={(pages) => {
-                  // const tabActive = pages.slice(1);
-                }}
-              >
-                {renderNavLink()}
-              </Nav>
+              <Nav>{renderNavLink()}</Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Navbar>
