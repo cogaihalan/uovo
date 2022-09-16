@@ -4,12 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Link from "next/link";
 import { Container, Offcanvas } from "react-bootstrap";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { useSelector, useDispatch } from "react-redux";
-import changeTabActive from "../../redux/reducers/NavbarReducers";
 const navLinkList = ["work", "about", "wedo", "contact"];
 export default function Header() {
-  // const tabNameActive = useSelector((state) => state.navbar.tabActive);
-  // const dispatch = useDispatch();
   const renderNavLink = () => {
     return navLinkList.map((item, index) => {
       let content = item;
@@ -53,8 +49,7 @@ export default function Header() {
             <Offcanvas.Body>
               <Nav
                 onSelect={(pages) => {
-                  const tabActive = pages.slice(1);
-                  // dispatch(changeTabActive(tabActive));
+                  // const tabActive = pages.slice(1);
                 }}
               >
                 {renderNavLink()}
