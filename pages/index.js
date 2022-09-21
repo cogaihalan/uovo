@@ -121,7 +121,7 @@ export default function Home() {
               <div
                 className="carousel-image"
                 style={{
-                  backgroundImage: "url(/assets/logo3.png) ",
+                  backgroundImage: "url(/assets/logo3.gif) ",
                 }}
               ></div>
             </Carousel.Item>
