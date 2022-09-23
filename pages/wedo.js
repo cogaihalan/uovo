@@ -10,8 +10,8 @@ export default function wedo() {
           <div className="page-container">
             <div className="page-content">
               <h3 className="page-subheading">
-                We consult, design brand strategies and convey them in visual
-                language with international standard methods!
+                We specialize in brand design consultancy, creating brand
+                strategies according to international standard methods.
               </h3>
               <div className="page-item">
                 <p className="page-item__heading">What we do:</p>

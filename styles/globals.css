@@ -374,7 +374,8 @@ a {
 }
 .page-item__desc {
   font-size: 1.25rem;
-  line-height: 1.7;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
 }
 .wedo .page-item__desc {
   padding-left: 2rem;
@@ -391,10 +392,11 @@ a {
 }
 .page-contact .page-heading {
   margin-top: 2rem;
+  font-weight: 300;
 }
 .page-contact .page-email {
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 2.25rem;
   text-decoration: none;
   color: white !important;
 }
@@ -467,11 +469,13 @@ a {
 .footer-office {
   text-align: right;
 }
+.footer-office__item {
+  font-size: 1.875rem;
+}
 .footer-office__item:first-child {
   margin-bottom: 1rem;
 }
 .footer-office__name {
-  font-size: 1.875rem;
   color: var(--primary-color);
 }
 

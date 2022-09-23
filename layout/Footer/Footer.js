@@ -84,7 +84,7 @@ export default function Footer() {
             </Nav>
             <div className="footer-office">
               <div className="footer-office__item">
-                <span className="footer-office__name">Hanoi Office</span>
+                <span className="footer-office__name">Hanoi </span>Office
                 <Nav.Link
                   href="mailto:hello@uovo.agency"
                   className="footer-list__item"
@@ -93,7 +93,7 @@ export default function Footer() {
                 </Nav.Link>
               </div>
               <div className="footer-office__item">
-                <span className="footer-office__name">Korea Office</span>
+                <span className="footer-office__name">Korea </span>Office
                 <Nav.Link
                   href="mailto:kr.hello@uovo.agency"
                   className="footer-list__item"
