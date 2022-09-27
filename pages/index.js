@@ -104,9 +104,10 @@ export default function Home() {
                 <p className="home-intro">
                   Hello!
                   <br />
-                  UOVO is an agency based in Hanoi since 2018. We aim for
-                  unfolding your brand story, mapping great brand strategies and
-                  letting them to win customer&apos;s mind.
+                  UOVO is an agency based in Hanoi since 2018.
+                  <br />
+                  We aim for unfolding your brand story, mapping great brand
+                  strategies and letting them to win customer&apos;s mind.
                   <br />
                   Your story is what inspired us!
                 </p>
