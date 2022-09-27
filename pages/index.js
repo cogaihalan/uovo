@@ -104,10 +104,11 @@ export default function Home() {
                 <p className="home-intro">
                   Hello!
                   <br />
-                  UOVO is a agency based in Hanoi in 2018. We aim for unfolding
-                  your brand story, mapping great brand strategies and letting
-                  them to win customer&apos;s mind. Your story is what inspired
-                  us!
+                  UOVO is an agency based in Hanoi since 2018. We aim for
+                  unfolding your brand story, mapping great brand strategies and
+                  letting them to win customer&apos;s mind.
+                  <br />
+                  Your story is what inspired us!
                 </p>
               </div>
             </Carousel.Item>

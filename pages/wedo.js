@@ -20,8 +20,8 @@ export default function wedo() {
                     - Design Logo & Brand Identity (Designs For Business Model)
                   </p>
                   <p>- Design Packaging & Gift Boxes.</p>
-                  <p>- Long-term Graphic Design For Business.</p>
-                  <p>- Product Photography, Brand Photography</p>
+                  <p>- Long-term Graphic Design For Business</p>
+                  <p>- Product Photography, Brand Photography.</p>
                 </div>
               </div>
               <div className="page-item">

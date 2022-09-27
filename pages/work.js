@@ -24,7 +24,7 @@ const dataNameImageJPG = [
   "lovebook(vedu corp)",
   "hicon",
   "persident cusise",
-  "quang ninh department of tourism",
+  // "quang ninh department of tourism",
   "king edu",
   "casakid",
   "casamia(interior design)",
